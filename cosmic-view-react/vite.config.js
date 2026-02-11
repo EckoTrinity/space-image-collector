@@ -1,23 +1,9 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    cssInjectedByJsPlugin(), // Merges CSS into the JS file
-  ],
-  build: {
-    lib: {
-      entry: './src/widget.jsx', // The file we just made
-      name: 'CosmicWidget',
-      fileName: 'cosmic-widget',
-    },
-    rollupOptions: {
-      external: [],
-    },
-  },
-  define: {
-    'process.env.NODE_ENV': '"production"' // Fixes some React errors in standalone builds
-  }
-});
+  plugins: [react()],
+  // We removed the 'build: { lib: ... }' section here
+  // to ensure it builds the full website.
+})
