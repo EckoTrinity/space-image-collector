@@ -1,16 +1,72 @@
-# React + Vite
+# Cosmic View — React Space Image Collector
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio project: a compact React + Vite app that collects and displays space imagery with a lightweight widget interface and Tailwind CSS styling.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Cosmic View is a small, responsive gallery and widget demo built to showcase UI work in a portfolio. It focuses on clean component structure, fast iteration with Vite, and easy styling with Tailwind.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive image gallery and widget UI
+- Small, modular React components for easy reuse and customization
+- Fast development with Vite HMR
+- Static assets in `src/assets` for offline demos or portfolio screenshots
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- Tailwind CSS
+- PostCSS
+
+## Getting Started
+
+Prerequisites: Node.js (LTS recommended)
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview production build locally:
+
+```bash
+npm run preview
+```
+
+## Project Structure (key files)
+
+- [src/App.jsx](src/App.jsx) — main application
+- [src/CosmicWidget.jsx](src/CosmicWidget.jsx) — widget component used for the demo
+- [src/widget.jsx](src/widget.jsx) — helper/widget logic
+- [src/assets](src/assets) — images and static assets
+- [index.html](index.html) — HTML entry
+- [package.json](package.json) — scripts and dependencies
+
+## Customization
+
+- Replace or add images inside `src/assets` to show your own collection.
+- Tweak styles in `tailwind.config.js` or `src/index.css` to match your portfolio branding.
+- Expand components in `src/` to add new features or integrations (e.g., NASA APIs).
+
+## License
+
+This project is intended as a personal portfolio showcase.
+
+## Author
+
+Rishkar Maharaj
